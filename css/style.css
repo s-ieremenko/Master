@@ -1,0 +1,937 @@
+﻿
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/Century Gothic/CenturyGothic-Italic.eot');
+    src: local('../fonts/Century Gothic/Century Gothic Italic'), local('CenturyGothic-Italic'),
+        url('../fonts/Century Gothic/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Century Gothic/CenturyGothic-Italic.woff') format('woff'),
+        url('../fonts/Century Gothic/CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/Century Gothic/CenturyGothic.eot');
+    src: local('../fonts/Century Gothic/Century Gothic'), local('CenturyGothic'),
+        url('../fonts/Century Gothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Century Gothic/..fonts/Century Gothic/CenturyGothic.woff') format('woff'),
+        url('../fonts/Century Gothic/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/Century Gothic/CenturyGothic-Bold.eot');
+    src: local('../fonts/Century Gothic/Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url('../fonts/Century Gothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Century Gothic/CenturyGothic-Bold.woff') format('woff'),
+        url('../fonts/Century Gothic/CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/Century Gothic/CenturyGothic-BoldItalic.eot');
+    src: local('../fonts/Century Gothic/Century Gothic Bold Italic'), local('CenturyGothic-BoldItalic'),
+        url('../fonts/Century Gothic/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Century Gothic/CenturyGothic-BoldItalic.woff') format('woff'),
+        url('../fonts/Century Gothic/CenturyGothic-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'philosopher';
+    src: url('../fonts/philosopher/ofont.ru_philosopher-webfont.eot');
+    src: url('../fonts/philosopher/ofont.ru_philosopher-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/philosopher/ofont.ru_philosopher-webfont.woff2') format('woff2'),
+         url('../fonts/philosopher/ofont.ru_philosopher-webfont.woff') format('woff'),
+         url('../fonts/philosopher/ofont.ru_philosopher-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+
+
+
+.navbar{
+  background: #f5f2f8
+}
+.nav>li>a{
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 14px;
+font-weight: 400;
+
+}
+
+
+.navbar-style .navbar-toggle .icon-bar {
+    background-color: #aeadd3;
+}
+
+
+
+    .navbar-toggle {
+ 
+    float: left;}
+    .logo{
+    margin: 20px 0 0 0;
+color: #ff5fb6;
+font-family: 'philosopher';
+font-size: 58px;
+font-weight: 700;
+font-style: italic;
+line-height: 10px;
+text-align: left;
+text-transform: uppercase;}
+.logo1{
+
+opacity: 0.9;
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 13px;
+font-style: italic;
+    line-height: 50px;
+    padding-left: 5px;
+
+
+}
+.nav-enter li a{
+    position: relative;
+    padding-left:25px;
+    display: block
+    
+}
+.nav-enter li a:before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    position: absolute;
+      bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background: url(../images/css_sprites.png) -10px -10px;
+}
+.nav-enter li+li a:before{
+      content: "";
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background: url(../images/css_sprites.png) -45px -10px;
+}
+
+    
+    .basket{
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 12px;
+font-weight: 400;
+margin-top:18px;
+text-align: right;
+
+    }
+    .basket a{
+      position: relative;
+    padding: 7px 0px 5px 42px;
+    display: inline-block  
+    }
+    .basket a:before{
+    content: "";
+    display: inline-block;
+    width: 37px;
+    height: 33px;
+    position: absolute;
+      bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background: url(../images/css_sprites.png)  -301px -10px
+}
+    .basket a+a:before{
+    content: "";
+    display: inline-block;
+    width: 37px;
+    height: 33px;
+    position: absolute;
+      bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background: url(../images/css_sprites.png)  -80px -10px
+}
+.basket a+a:after{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(30% 45%, #ff5fb6 30%, white 30%, white 50%, #ff5fb6 50%);
+   
+     top:60%;
+    left: 0;
+
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-25%);
+
+}
+
+    
+   
+    .dropdown_first{
+       
+        max-height: 100%;
+z-index:5;
+
+position: static;
+margin-top: -45px
+
+       }
+.dropdown_first li a{
+
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 15px;
+font-weight: 400;
+
+line-height: 18px;
+text-align: left;}
+
+.dropdown_first button{
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 18px;
+font-weight: 700;
+
+text-align: left;
+text-transform: uppercase;
+border:none;
+padding-left:0
+
+  }
+.dropdown-menu1{
+  background: rgba(255,255,255, .8);
+    transform: translateX(3%);
+height:536px
+}
+.dropdown-menu1 li a{
+    white-space: break-spaces;
+}
+  .slider{
+    position: relative;
+    margin-top: -80px;
+    
+  }
+   .slider_container{
+    position: relative;
+    min-height:100%
+   }
+   .img_main{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+
+   }
+   .text-item{
+    height: auto;
+    position: relative;
+    z-index: 10;
+    margin: 105px 0;
+    border: 14px solid #e1d2e7;
+    text-align: right;
+    padding: 59px 0 59px 110px;
+   }
+   .text-item span{
+
+color: #fffeff;
+font-family: "Century Gothic";
+font-size: 42px;
+font-weight: 400;
+
+text-align: right;
+text-transform: uppercase;
+
+   }
+   
+   
+   .right-element{
+   
+height: 100%;
+position:absolute;
+top:0;
+right: 0;
+background: rgba(210, 190, 227, .5);
+border-radius: 72px 0 0 72px / 50% 0 0 50%
+  }
+
+   @media screen and (min-width: 768px){
+        .right-element{
+    width: calc((100vw - 768px) / 2 + 186px) ;} 
+
+    }   
+      @media screen and (min-width: 992px){
+        .right-element{
+    width: calc((100vw - 992px) / 2 + 243px) ;}    
+    }
+    @media screen and (min-width: 1200px) {
+    .right-element{
+    width: calc((100vw - 1170px) / 2 + 291px) ;}
+}
+
+ 
+     h3, h2{
+        
+        text-align: center;
+        margin-bottom: 54px
+    }
+    .sliders div{
+        word-wrap: break-word;
+        text-align: left;
+        padding: 20px 20px 20px 20px;
+        border: 10px solid #f7f7f7;
+margin-bottom:30px;
+position: relative;}
+
+.sliders div:before{
+
+    content: "";
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+        top: -20px;
+    left: 0;
+    background: url(../images/css_sprites.png) -600px -10px;
+}
+.sliders2 div:before{
+ width: 36px;
+    height: 56px;
+    background: url(../images/css_sprites.png) -245px -10px
+}
+.sliders3 div:before{
+ width: 62px;
+    height: 60px;
+    background: url(../images/css_sprites.png) -436px -10px}
+
+    .fourth h2 span:before, .third h2 span:before{
+          content: "";
+    display: inline-block;
+    width: 66px;
+    height: 60px;
+    position: absolute;
+        top: -20px;
+    left: 36%;
+    background: url(../images/css_sprites.png) -682px -10px;
+
+    }
+    .fourth h2 span:before{
+        background: url(../images/css_sprites.png) -518px -10px;
+        width: 62px;
+    height: 61px
+    }
+
+        h2{
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 36px;
+}
+#number_id, #number_id1, #number_id2, #number_id3, #number_id4, #number_id5, #number_id6, #number_id7, #number_id8{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+border-color: #5b5da8;
+    text-align: center;
+}
+#number_id, #number_id1, #number_id2, #number_id3, #number_id4, #number_id5, #number_id6, #number_id7, #number_id8 label{
+    color: #5b5da8;}
+h4{
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 14px;
+font-weight: 700;
+
+/* Text style for "М, асло по" */
+font-family: "Century Gothic";
+font-weight: 700;
+
+}
+input[type="submit"]{
+background: #ff5fb6;
+border-radius: 15%;
+border: none;
+    color: #fefefe;
+    font-family: "Century Gothic";
+font-weight: 700;
+}
+    .fourth p, .third p{
+      
+        text-align: center;
+        color: #ff5fb6;
+font-family: "Century Gothic";
+font-size: 24px;
+height: 30px;
+overflow: hidden;
+    }
+.fourth p span+span, .third p span+span{
+color: #5b5da8;
+font-size: 16px;}
+   
+   .third .item, .fourth .item{
+    border: 15px solid #fafafa;
+    text-align:center;
+   }
+   .item h4{
+    height: 48px;
+    overflow: hidden;
+   }
+   .item_pic{
+    height: 170px;
+    overflow: hidden;}
+.item_pic img{
+    max-height: 100%;
+   
+    object-fit: contain;}
+
+  
+   
+   .stars{
+    height: 20px;
+    overflow: hidden;
+   }
+   .stars li{
+    width: 15px;
+    height: 15px;
+    background: url(../images/star.png);
+
+   }
+    .banner{
+    
+    position: relative;
+    z-index: 10;
+    background: #c5b3d8;
+    float: left;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    .banner2{
+  
+  
+    float: right;
+    
+    
+    background: rgba(238, 238, 245, .6);
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    object-fit: cover;}
+    .crem{
+        position: relative;
+    }
+
+
+.text_banner, .text_banner1{
+
+color: #ffffff;
+font-family: "Century Gothic";
+font-size: 24px;
+font-weight: 700;
+
+text-align: left;
+text-transform: uppercase;}
+.text_banner{
+    padding: 20px 20px 0 20px;
+line-height: 7px}
+
+
+.text_banner1{
+padding: 0 0 0 20px;
+font-size: 12px;
+font-weight: 400;}
+
+.text_banner2, .text_banner2_1, .text_banner2_2{
+color: #707070;
+font-family: "Century Gothic";
+font-size: 24px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: right;
+}
+.text_banner2_1{
+text-transform: uppercase;}
+
+
+
+
+.text_banner2{
+    font-size: 72px;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+
+
+}
+.text_banner2_2{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+.reviews{
+    background: #c5b3d8;
+    position: relative;
+
+
+}
+
+.reviews h2{
+
+color: #ffffff;
+
+padding-top: 83px
+
+
+
+}
+ h2 span, h3 span{
+border-bottom: 6px solid transparent;
+  border-image: linear-gradient(to right,#ffc5e4 20%,  #fcd2e3 30%, #f7ebe3 70%, #f7f5f3 90%);
+  border-image-slice: 1;
+  position: relative;
+
+color: #5b5da8;
+font-family: "Century Gothic";
+font-size: 36px;
+
+text-transform: uppercase;}
+h3 span{
+font-size: 24px;}
+
+
+
+.cream, .cream1{
+    overflow: hidden;
+    height: 260px
+        
+}
+.img_cream{
+      min-width: 100%;
+     height: auto; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;}
+
+
+              @media screen and (max-width: 398px){
+        
+.img_main_main{
+
+display:inline-block;
+width:100%;
+position:static}
+}
+
+ @media screen and (max-width: 425px){
+    .banner {
+  
+   
+    background: rgba(197,179, 216, 0.4);
+        }}
+
+   
+            
+            
+                
+.img_main_main{
+
+
+width:100%;
+position:static}
+
+
+
+
+.btn_search{
+background: #ff5fb6;
+border-radius: 0 9px 9px 0 / 0 9px 9px 0 ;
+color:white}
+.search-field{
+    border-radius: 9px 0 0 9px /9px 0 0 9px;}
+.cont_tel{
+    text-align: right;
+
+color: #ff5fb6;
+font-family: "Century Gothic";
+font-size: 14px;
+font-weight: 700;
+line-height:10px;
+text-transform: uppercase;
+    padding-top: 1px;
+
+}
+
+                
+             
+            
+
+  
+  .owl-reviews p{
+
+
+color: #ffffff;
+font-family: "Century Gothic";
+font-size: 14px;
+font-weight: 400;
+
+font-style: italic;
+letter-spacing: normal;
+line-height: normal;
+margin-top:48px;
+padding:0 20px;
+position: relative;
+z-index: 5
+}
+.owl-reviews p+p{
+    font-weight: 700;
+    margin-bottom: 148px}
+  
+ @media screen and (max-width: 767px){
+
+        
+.navbar-header {
+        float: left;
+    }
+    .navbar-left {
+        float: none !important;
+    }
+    .navbar-right{
+        float: right !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+       
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+       
+        text-align: left;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }}
+
+.text_review:before{
+    content: "";
+    width: 50%;
+    height: 121px;
+    border: 14px solid #cdbddd;
+    position: absolute;
+    top: -8%;
+    transform: translateX(39%);
+
+   
+}
+.owl-reviews div{
+    position: relative;
+
+}
+.info{
+position:relative;
+min-width:100%;
+min-height:100%
+}
+.info:before{
+    content: "";
+
+height: 343px;
+position:absolute;
+   
+    left: 0;
+    top: 0;
+  
+    background: url(../images/Sea_Salt_Bowl.png) no-repeat 0 50%;
+   
+  }
+.info:after{
+    content: "";
+
+height: 387px;
+position:absolute;
+top:0;
+right:0;
+background: url(../images/White_Vase.png) no-repeat 100% 0%;
+    margin-top: -90px;
+}
+
+     
+      @media screen and (min-width: 992px){
+        .info:before, .info:after{
+    width: calc((100vw - 992px) / 2 + 184px) ;}  
+    } 
+    @media screen and (max-width: 992px){
+        .info:before, .info:after {
+    visibility: hidden; } 
+    } 
+    @media screen and (min-width: 1200px) {
+    .info:before, .info:after{
+    width: calc((100vw - 1170px) / 2 + 194px) ;}
+}
+.description p{
+text-align:justify;
+
+color: #707070;
+font-family: "Century Gothic";
+font-size: 14px;
+}
+footer{
+background:#765598}
+section{
+margin-bottom:85px}
+footer span{
+
+color: #ffffff;
+font-family: "Century Gothic";
+font-size: 17px;
+font-weight: 700;
+word-wrap: break-word;
+}
+footer h3{
+    text-align: left;
+}
+.services li a, .services li, .connection li{
+
+color: #ffffff;
+font-family: "Century Gothic";
+font-size: 14px;
+padding: 20px 0
+
+}
+.connection li{
+    padding-left: 35px;
+    position: relative;}
+     .connection li+li{
+        padding-left: 36px}
+
+    .connection li+li+li{
+        padding-left: 30px
+    }
+    .connection li+li+li+li{
+        padding-left: 40px}
+    
+.connection li:before{
+    content: "";
+    width: 23px;
+    height: 32px;
+    top:30%;
+    left:  0;
+    position: absolute;
+    display: inline-block;
+    background: url(../images/css_sprites1.png)  -10px -10px;
+}
+.connection li+li:before{
+    content: "";
+    width: 34px;
+    height: 31px;
+    top:30%;
+    left:  0;
+    position: absolute;
+    display: inline-block;
+    background: url(../images/css_sprites1.png) -157px -10px;
+
+}.connection li+li+li:before{
+        content: "";
+    width: 31px;
+    height: 33px;
+    top:35%;
+    left:  0;
+    position: absolute;
+    display: inline-block;
+    background: url(../images/css_sprites1.png) -53px -10px;
+
+}
+.connection li+li+li+li:before{
+        content: "";
+    width: 33px;
+    height: 32px;
+    top:35%;
+    left:  0;
+    position: absolute;
+    display: inline-block;
+    background: url(../images/css_sprites1.png) -104px -10px;
+    
+}
+.socMenu li{
+    padding-bottom: 50px
+}
+
+.socMenu li a{
+    position: relative;
+    padding: 5px 5px 20px 40px;
+
+}
+.socMenu li a:before{
+   content: "";
+   width: 41px; height: 41px;
+    background: url('../images/css_sprites1.png') -333px -10px;
+    top:30%;
+    left:  0;
+    position: absolute;}
+
+    .socMenu li+li a:before{
+   
+    background: url('../images/css_sprites1.png') -272px -10px;
+   }
+
+    .socMenu li+li+li a:before{
+   
+    background: url('../images/css_sprites1.png') -211px -10px;
+    }
+
+    .socMenu li+li+li+li a:before{
+
+    background: url('../images/css_sprites1.png') -394px -10px;
+   }
+@media screen and (max-width: 398px) {
+.logo1{
+font-size:11px;
+}
+.logo{
+font-size:48px;
+}}
+
+@media screen and (max-width: 1200px){
+.services li{
+padding:12px 0}
+.dropdown-menu1{
+height:auto
+}
+}
+
+ @media screen and (min-width: 992px) and (max-width: 1200px){
+.soc ul, .soc h3{
+text-align:center}
+.soc ul{
+    margin-top: 20px
+    }
+    .connection{
+        margin-top: -12px
+    }
+.connection li{
+    padding-bottom: 0
+    }
+}
+
+
+ @media screen and (max-width: 767px){
+section{
+margin-bottom:24px}
+
+.dropdown_first {
+ margin-top: -34px;}
+.slider{
+margin-top: 24px;
+
+}
+.cont_tel{
+font-size: 13px}
+.cream1{
+    margin-top: 20px
+}
+.nav-enter {
+    display: flex;
+}
+}
+
+@media screen and (max-width: 398px){
+.cont_tel{
+font-size: 10px}
+h3 span{
+font-size:18px}
+}
+.owl-reviews .owl-nav button.owl-next span,
+ .owl-reviews .owl-nav button.owl-prev span,
+  .owl-reviews button.owl-dot span {
+    display: none;}
+    .owl-reviews .owl-nav button.owl-next,
+ .owl-reviews .owl-nav button.owl-prev,
+  .owl-reviews button.owl-dot{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+border: 2px solid #5b5da8;
+position: relative;
+left: 50%;
+
+    bottom: 82px;
+    transform: translateX(-150%);
+    margin-right: 20px;
+
+  }
+  
+   .owl-reviews .owl-nav button.owl-prev:before,
+  .owl-reviews button.owl-dot:before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-left: 2px solid #5b5da8;
+    border-bottom: 2px solid #5b5da8;
+   
+        transform: rotate(45deg) translateX(-8px)
+  }
+  .owl-reviews .owl-nav button.owl-next:after,
+ .owl-reviews button.owl-dot:after{
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    border-top: 2px solid #5b5da8;
+    border-right: 2px solid #5b5da8;
+   
+        transform: rotate(45deg) translateX(-8px)
+  }
+  .owl-carousel button.owl-dot{
+    display: none;
+  }
+ @media screen and (min-width: 768px) and (max-width: 992px){
+    .nav>li>a{
+        font-size: 12px
+    }
+}
